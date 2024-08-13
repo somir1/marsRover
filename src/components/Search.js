@@ -53,7 +53,7 @@ const Search = () => {
             {data.length > 0 ? (
             <div className='sm:ml-8'>
                 <p>Total images: {data.length}</p>
-                <div className="flex flex-col w-full sm:w-[40rem] max-w-full sm:max-h-96 overflow-y-scroll border border-gray-200 p-4 rounded-lg">
+                <div className="flex flex-col w-full sm:w-[50rem] max-w-full sm:max-h-96 overflow-y-scroll border border-gray-200 p-4 rounded-lg">
                 {data.map((info, idx) => (
                 <div className="flex flex-col justify-center items-center mb-8" key={idx}>  
                 <img 
@@ -66,7 +66,7 @@ const Search = () => {
                     href={info.img_src} 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="sm:text-xl text-xs text-blue-500 hover:underline mt-2"
+                    className="sm:text-xl text-xs hover:underline mt-2"
                 >
                     View Full Size Image
                 </a>
