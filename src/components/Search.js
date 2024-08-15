@@ -4,7 +4,7 @@ import axios from 'axios';
 const Search = () => {
     const [date, setDate] = useState('');
     const [data, setData] = useState([]);
-    const [error, setError] = useState(false); // State to track if no data was found
+    const [error, setError] = useState(false);
 
     const onSubmit = e => {
         e.preventDefault();
@@ -19,7 +19,7 @@ const Search = () => {
                     setError(false);
                 } else {
                     setData([]);
-                    setError(true); // Set error to true if no data is found
+                    setError(true);
                 }
             })
             .catch(err => {
